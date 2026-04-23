@@ -7,11 +7,6 @@
 
 
 
-
-<h1 align="center">
-  MediaMTX Dashboard
-</h1>
-
 <p align="center">
   A modern web interface for the <a href="https://github.com/bluenviron/mediamtx">MediaMTX</a> media server.
 </p>
