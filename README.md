@@ -1,4 +1,5 @@
-
+[![GitHub stars](https://img.shields.io/github/stars/PsymoNiko/mediamtx-dashboard)](https://github.com/PsymoNiko/mediamtx-dashboard/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/PsymoNiko/mediamtx-dashboard)](https://github.com/PsymoNiko/mediamtx-dashboard/issues)
 
 
 <h1 align="center">
