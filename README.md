@@ -1,131 +1,148 @@
-[![GitHub stars](https://img.shields.io/github/stars/PsymoNiko/mediamtx-dashboard)](https://github.com/PsymoNiko/mediamtx-dashboard/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/PsymoNiko/mediamtx-dashboard)](https://github.com/PsymoNiko/mediamtx-dashboard/issues)
+
+<p align="center">
+  <a href="https://psymoniko.github.io/mediamtx-dashboard/">
+    <img src="Dashboard_Logo.jpg" alt="MediaMTX">
+  </a>
+</p>
+
+
 
 
 <h1 align="center">
-  <a href="https://mediamtx.org">
-    <img src="Dashboard_Logo.jpg" alt="MediaMTX">
-  </a>
+  MediaMTX Dashboard
+</h1>
 
+<p align="center">
+  A modern web interface for the <a href="https://github.com/bluenviron/mediamtx">MediaMTX</a> media server.
+</p>
+
+<p align="center">
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/stargazers"><img src="https://img.shields.io/github/stars/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&color=yellow" alt="GitHub stars"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/network/members"><img src="https://img.shields.io/github/forks/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&color=blue" alt="GitHub forks"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/issues"><img src="https://img.shields.io/github/issues/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github" alt="GitHub issues"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=open-source-initiative&color=blue" alt="License"></a>
   <br>
+  <a href="https://psymoniko.github.io/mediamtx-dashboard/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fpsymoniko.github.io%2Fmediamtx-dashboard%2F&style=for-the-badge&logo=githubpages&label=Website&color=informational" alt="Website"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/discussions"><img src="https://img.shields.io/github/discussions/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&label=Discussions&color=blueviolet" alt="GitHub Discussions"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/wiki"><img src="https://img.shields.io/badge/docs-wiki-blue?style=for-the-badge&logo=github&label=Wiki" alt="Wiki"></a>
   <br>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/actions"><img src="https://img.shields.io/github/actions/workflow/status/PsymoNiko/mediamtx-dashboard/deploy.yml?style=for-the-badge&logo=githubactions&label=CI" alt="CI"></a>
+  <img src="https://img.shields.io/github/languages/top/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=typescript&color=3178C6" alt="Top language">
+  <img src="https://img.shields.io/github/languages/count/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=codefactor&color=purple" alt="Languages count">
+</p>
 
+---
 
-# mediamtx-dashboard
+**MediaMTX Dashboard** is a powerful, user-friendly web interface designed to simplify the management and monitoring of your [MediaMTX](https://github.com/bluenviron/mediamtx) streaming infrastructure. It provides an intuitive UI, real-time updates, and modular components for extensibility.
 
-* [bluenviron / mediamtx](https://github.com/bluenviron/mediamtx):Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy that allows to read, publish, proxy, record and playback video and audio streams.
+## ✨ Features
 
-A modern dashboard project leveraging the latest web technologies to provide a robust and flexible interface for managing media streaming with MediaMTX.
+- **🖥️ Intuitive Dashboard**: Get a clear overview of your streaming server's status and health.
+- **📡 Stream Management**: Easily add, configure, and monitor RTSP, RTMP, HLS, and WebRTC streams.
+- **📊 Real-time Metrics**: Visualize key performance indicators like bitrate, connected clients, and protocol usage.
+- **⚙️ Configuration Management**: Edit `mediamtx.yml` settings directly from the web interface.
+- **🐳 Easy Deployment**: Run the dashboard locally with `pnpm` or deploy it using the provided Docker configuration.
 
-## Technologies Used
-
-- **TypeScript** (79%): Strongly-typed JavaScript for scalable application development.
-- **Shell** (10.1%): Used for scripting automation and deployment.
-- **CSS** (7.3%): For custom styling and layouts.
-- **Makefile** (2.3%): For build and automation tasks.
-- **Other** (1.3%): Additional supporting scripts and configuration.
-
-The project structure and files indicate usage of:
-- **Next.js** (evident from `next.config.mjs`), a React-based framework for SSR and SSG.
-- **pnpm** (see `PNPM.md`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`) as the package manager.
-- **Docker** (multiple Dockerfiles and Compose files) for containerized development and deployment.
-- **PostCSS** (via `postcss.config.mjs`) for advanced CSS processing.
-
-## Concept
-
-The dashboard is designed to simplify the management and monitoring of MediaMTX-based streaming infrastructure. It provides an intuitive interface, real-time updates, and modular components for extensibility. The architecture supports both local development and production deployments using Docker and pnpm workspaces.
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- **Node.js** (recommended LTS version)
+- **Node.js** (Latest LTS version recommended)
 - **pnpm**: Install via `npm install -g pnpm`
-- **Docker** (for containerized workflows)
+- **Docker** (Optional, for containerized workflows)
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/PsymoNiko/mediamtx-dashboard.git
    cd mediamtx-dashboard
-   ```
+```
 
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    pnpm install
    ```
 
-### Running the Project
+Running the Project
 
-#### Local Development
+Local Development
+
+Start the development server with hot-reload:
 
 ```bash
 pnpm dev
 ```
 
-Or, using Docker Compose for a local containerized environment:
-* PS: If you want to run the dashboard on `pnpm` as in local, replace this config in `.env.local`
+Using Docker Compose
 
+For a containerized local environment:
 
-```bash
-NEXT_PUBLIC_MEDIAMTX_API_URL=http://localhost:9997
-NEXT_PUBLIC_MEDIAMTX_HLS_URL=http://localhost:8888
-MTX_WEBRTCADDITIONALHOSTS="localhost"
-```
+1. Create a .env.local file with your MediaMTX configuration.
+2. Start the publisher service:
+   ```bash
+   docker-compose up publisher -d
+   ```
+3. Build and run the dashboard:
+   ```bash
+   pnpm run build
+   pnpm run dev
+   ```
 
-```bash
+Production Deployment
 
-docker-compose up publisher -d
-
-pnpm run build
-pnpm run dev
-```
-
-#### Production
-
-Build and run with Docker Compose:
+Build and run with the production Docker Compose configuration:
 
 ```bash
 docker-compose -f docker-compose.prod.yml up --build
 ```
 
-Or, use the provided Dockerfiles for different environments (`Dockerfile`, `Dockerfile.dev`, `Dockerfile.simple`, `Dockerfile.debian`).
+Alternative Dockerfiles are available for different environments (Dockerfile, Dockerfile.dev, Dockerfile.simple, Dockerfile.debian).
 
-#### Using Makefile
+📚 Documentation
 
-For advanced build or automation tasks, refer to the `Makefile`:
+For detailed information, please refer to the following resources:
 
-```bash
-make <target>
-```
+· Wiki: Comprehensive guides on configuration, deployment, and troubleshooting.
+· Discussions: Ask questions, share ideas, and get support from the community.
+· Open Collective: Support the project and its ongoing development.
 
-### Additional Documentation
+🛠️ Tech Stack
 
-- See `PNPM.md` for pnpm workspace and monorepo management.
-- See `DOCKER.md` for detailed Docker usage instructions.
-- See `MONITORING.md` for monitoring setup with Prometheus and Grafana.
+The dashboard is built with a modern, scalable set of technologies:
 
-## Monitoring
+· TypeScript (79%): Provides strongly-typed, maintainable code for the core application logic.
+· Next.js: A React-based framework for server-side rendering (SSR) and static site generation (SSG).
+· pnpm: The package manager for efficient workspace and monorepo management.
+· Docker: Multiple Dockerfiles and Compose files are provided for containerized development and production deployments.
+· PostCSS: For advanced CSS processing.
 
-The project includes a comprehensive monitoring stack with Prometheus, Grafana, and Node Exporter:
+🤝 Contributing
 
-- **Grafana Dashboard**: `http://localhost:3001` (admin/admin)
-- **Prometheus**: `http://localhost:9090`
-- **Pre-configured Dashboards**: MediaMTX metrics and system monitoring
+We welcome contributions from the community! To get started:
 
-For detailed setup and configuration, see `MONITORING.md`.
+1. Fork the repository.
+2. Create a feature branch: git checkout -b feature/amazing-feature
+3. Commit your changes: git commit -m 'Add some amazing feature'
+4. Push to the branch: git push origin feature/amazing-feature
+5. Open a Pull Request.
 
-## Project Structure
+Please ensure your code adheres to the existing style and includes appropriate tests.
 
-- `app/`, `components/`, `lib/`, `public/`, `styles/` — Main application, UI, and assets.
-- Multiple Dockerfiles and Compose files for flexible deployment.
-- `Makefile` for task automation and builds.
+💬 Support and Community
 
-## License
+· GitHub Issues: Report a bug or request a feature
+· GitHub Discussions: Join the conversation
+· Project Wiki: Browse the documentation
+· Open Collective: Sponsor the project
 
-No license information is currently provided. Please check with the repository owner for usage guidelines.
+📄 License
+
+Distributed under the MIT License. See LICENSE for more information.
 
 ---
 
-For more details, visit the [GitHub repository](https://github.com/PsymoNiko/mediamtx-dashboard).
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/PsymoNiko">Ali Mohammadnia</a> and the community.<br>
+  <i>Not officially affiliated with the MediaMTX project.</i>
+</p>
