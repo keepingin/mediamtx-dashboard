@@ -15,7 +15,7 @@
   <a href="https://github.com/PsymoNiko/mediamtx-dashboard/stargazers"><img src="https://img.shields.io/github/stars/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&color=yellow" alt="GitHub stars"></a>
   <a href="https://github.com/PsymoNiko/mediamtx-dashboard/network/members"><img src="https://img.shields.io/github/forks/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&color=blue" alt="GitHub forks"></a>
   <a href="https://github.com/PsymoNiko/mediamtx-dashboard/issues"><img src="https://img.shields.io/github/issues/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github" alt="GitHub issues"></a>
-  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=open-source-initiative&color=blue" alt="License"></a>
+  <a href="https://github.com/PsymoNiko/mediamtx-dashboard/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=open-source-initiative&color=blue" alt="License"></a>
   <br>
   <a href="https://psymoniko.github.io/mediamtx-dashboard/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fpsymoniko.github.io%2Fmediamtx-dashboard%2F&style=for-the-badge&logo=githubpages&label=Website&color=informational" alt="Website"></a>
   <a href="https://github.com/PsymoNiko/mediamtx-dashboard/discussions"><img src="https://img.shields.io/github/discussions/PsymoNiko/mediamtx-dashboard?style=for-the-badge&logo=github&label=Discussions&color=blueviolet" alt="GitHub Discussions"></a>
