@@ -82,7 +82,7 @@ services:
       - mediamtx_network
 
   dashboard:
-    image: mediamtx-dashboard:latest
+    image: psymoniko/mediamtx-dashboard:latest
     build:
       context: .
       dockerfile: Dockerfile
