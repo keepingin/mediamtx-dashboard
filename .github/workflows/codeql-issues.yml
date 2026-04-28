@@ -1,0 +1,32 @@
+name: Create Issues from CodeQL Alerts
+
+on:
+  code_scanning:
+    alerts:
+      types: [created, reopened]
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: read
+      issues: write
+    steps:
+      - name: Create issue from CodeQL alert
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const alert = context.payload.alert;
+            const title = `[CodeQL] ${alert.rule.severity} - ${alert.rule.name}`;
+            const body = `**Path:** ${alert.most_recent_instance.location.path}
+            **Line:** ${alert.most_recent_instance.location.start_line}
+            **Description:** ${alert.rule.description}
+            **Tool:** ${alert.tool}
+            [View in Security Tab](${alert.html_url})`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['security', 'code-scanning', 'automated']
+            });
