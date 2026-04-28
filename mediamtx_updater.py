@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+import logging
 import requests
 import json
 import time
-import logging
 import sys
 from requests.auth import HTTPBasicAuth
 
