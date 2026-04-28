@@ -255,10 +255,10 @@ def check_mediamtx_connectivity():
         return False
 
 def main():
+    # First, check connectivity
     logging.info("MediaMTX Configuration Updater started")
     logging.info(f"Using username: {MEDIAMTX_USERNAME}")
     
-    # First, check connectivity
     if not check_mediamtx_connectivity():
         logging.error("Initial connectivity check failed. Exiting.")
         sys.exit(1)
