@@ -3,17 +3,17 @@ name: Build and Push Docker Image to Docker Hub
 on:
   push:
     branches:
-      - main          # Trigger on push to main branch
+      - main
     tags:
-      - 'v*'          # Also trigger on version tags like v1.0.0
+      - 'v*'
   pull_request:
     branches:
-      - main          # Optional: build but don't push on PRs
-  workflow_dispatch:  # Allow manual trigger
+      - main
+  workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: psymoniko/mediamtx-dashboard   # Change to your Docker Hub repo
-  DOCKER_FILE: Dockerfile.prod                 # or Dockerfile, whichever you use
+  DOCKER_IMAGE: psymoniko/mediamtx-dashboard
+  DOCKER_FILE: Dockerfile.prod
 
 jobs:
   build-and-push:
