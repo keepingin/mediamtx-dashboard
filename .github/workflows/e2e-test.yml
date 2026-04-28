@@ -1,0 +1,39 @@
+name: E2E – MediaMTX Connection
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - run: pnpm install
+
+      # Spin up a real MediaMTX instance in the background
+      - name: Run MediaMTX
+        run: |
+          docker run -d --name mediamtx -p 9997:9997 \
+            -e MTX_API=yes \
+            -e MTX_APIADDRESS=:9997 \
+            bluenviron/mediamtx:latest
+          sleep 5  # wait for it to be ready
+
+      - name: Build dashboard
+        run: pnpm build
+
+      - name: Start dashboard & test API call
+        run: |
+          pnpm start &  # runs on port 3000 by default
+          sleep 10
+          curl -f http://localhost:3000/api/streams || exit 1
+
+      - name: Logs on failure
+        if: failure()
+        run: docker logs mediamtx
