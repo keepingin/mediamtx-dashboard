@@ -125,6 +125,8 @@ We welcome contributions from the community! To get started:
 4. Push to the branch: `git push origin feature/amazing-feature`  
 5. Open a Pull Request.
 
+Please see [CONTRIBUTING.md file](CONTRIBUTING.md).
+
 Please ensure your code adheres to the existing style and includes appropriate tests.
 
 ## 💬 Support and Community
