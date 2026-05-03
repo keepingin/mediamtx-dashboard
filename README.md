@@ -1,11 +1,8 @@
-
 <p align="center">
   <a href="https://psymoniko.github.io/mediamtx-dashboard/">
     <img src="Dashboard_Logo.jpg" alt="MediaMTX">
   </a>
 </p>
-
-
 
 <p align="center">
   A modern web interface for the <a href="https://github.com/bluenviron/mediamtx">MediaMTX</a> media server.
@@ -49,19 +46,21 @@
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/PsymoNiko/mediamtx-dashboard.git
-   cd mediamtx-dashboard
+
+```bash
+git clone https://github.com/PsymoNiko/mediamtx-dashboard.git
+cd mediamtx-dashboard
 ```
 
-1. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+2. **Install dependencies:**
 
-Running the Project
+```bash
+pnpm install
+```
 
-Local Development
+## Running the Project
+
+### Local Development
 
 Start the development server with hot-reload:
 
@@ -69,22 +68,26 @@ Start the development server with hot-reload:
 pnpm dev
 ```
 
-Using Docker Compose
+### Using Docker Compose
 
 For a containerized local environment:
 
-1. Create a .env.local file with your MediaMTX configuration.
-2. Start the publisher service:
-   ```bash
-   docker-compose up publisher -d
-   ```
-3. Build and run the dashboard:
-   ```bash
-   pnpm run build
-   pnpm run dev
-   ```
+1. Create a `.env.local` file with your MediaMTX configuration.
 
-Production Deployment
+2. Start the publisher service:
+
+```bash
+docker-compose up publisher -d
+```
+
+3. Build and run the dashboard:
+
+```bash
+pnpm run build
+pnpm run dev
+```
+
+## Production Deployment
 
 Build and run with the production Docker Compose configuration:
 
@@ -94,44 +97,46 @@ docker-compose -f docker-compose.prod.yml up --build
 
 Alternative Dockerfiles are available for different environments (Dockerfile, Dockerfile.dev, Dockerfile.simple, Dockerfile.debian).
 
-📚 Documentation
+## 📚 Documentation
 
 For detailed information, please refer to the following resources:
 
-· Wiki: Comprehensive guides on configuration, deployment, and troubleshooting.
-· Discussions: Ask questions, share ideas, and get support from the community.
-· Open Collective: Support the project and its ongoing development.
+- Wiki: Comprehensive guides on configuration, deployment, and troubleshooting.  
+- Discussions: Ask questions, share ideas, and get support from the community.  
+- Open Collective: Support the project and its ongoing development.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 The dashboard is built with a modern, scalable set of technologies:
 
-· TypeScript (79%): Provides strongly-typed, maintainable code for the core application logic.
-· Next.js: A React-based framework for server-side rendering (SSR) and static site generation (SSG).
-· pnpm: The package manager for efficient workspace and monorepo management.
-· Docker: Multiple Dockerfiles and Compose files are provided for containerized development and production deployments.
-· PostCSS: For advanced CSS processing.
+- TypeScript (79%): Provides strongly-typed, maintainable code for the core application logic.  
+- Next.js: A React-based framework for server-side rendering (SSR) and static site generation (SSG).  
+- pnpm: The package manager for efficient workspace and monorepo management.  
+- Docker: Multiple Dockerfiles and Compose files are provided for containerized development and production deployments.  
+- PostCSS: For advanced CSS processing.
 
-🤝 Contributing
+## 🤝 Contributing
 
 We welcome contributions from the community! To get started:
 
-1. Fork the repository.
-2. Create a feature branch: git checkout -b feature/amazing-feature
-3. Commit your changes: git commit -m 'Add some amazing feature'
-4. Push to the branch: git push origin feature/amazing-feature
+1. Fork the repository.  
+2. Create a feature branch: `git checkout -b feature/amazing-feature`  
+3. Commit your changes: `git commit -m 'Add some amazing feature'`  
+4. Push to the branch: `git push origin feature/amazing-feature`  
 5. Open a Pull Request.
+
+Please see [CONTRIBUTING.md file](CONTRIBUTING.md).
 
 Please ensure your code adheres to the existing style and includes appropriate tests.
 
-💬 Support and Community
+## 💬 Support and Community
 
-· GitHub Issues: Report a bug or request a feature
-· GitHub Discussions: Join the conversation
-· Project Wiki: Browse the documentation
+· GitHub Issues: Report a bug or request a feature  
+· GitHub Discussions: Join the conversation  
+· Project Wiki: Browse the documentation  
 · Open Collective: Sponsor the project
 
-📄 License
+## 📄 License
 
 Distributed under the MIT License. See LICENSE for more information.
 
